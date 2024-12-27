@@ -1,0 +1,140 @@
+@use "partials/global" as *;
+@use "partials/variables" as *;
+
+body {
+  background-color: $primary-color-grey;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 4rem 4rem 4rem 4rem;
+
+
+  &__title{
+    padding: 2rem;
+    font-size: 4.5rem;
+    margin-bottom: 3rem;
+  }
+
+  &__giphy
+  {
+    border-radius: .9375rem;
+  }
+  
+}
+.search{
+display: flex;
+}
+
+.search__bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.cocktails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.cocktail {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: $secondary-color-white;
+  color: $primary-color-black;
+  border-radius: 0.9375rem;
+  padding: 1.5rem;
+  margin:  1.5rem;
+  width: 70%;
+
+
+  &__image {
+    width: 30%;
+    height: auto;
+    border-radius: 0.9375rem;
+    margin-right: 2.625rem;
+  }
+
+  &__name {
+    color: $primary-color-grey;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    color: $primary-color-black;
+  }
+
+  &__ingredients {
+    margin-top: 2rem;
+    color: $primary-color-black;
+  }
+}
+
+.cocktail:hover {
+  background-color: $secondary-color-mercury;
+  width: 75%;
+  transition: width 0.3s;
+}
+
+button {
+  border-radius: 1rem;
+  width: 11.625rem;
+  padding: 1rem;
+  flex-shrink: 0;
+  background: $primary-color-yellow;
+  color: $primary-color-black;
+}
+
+.search__input {
+  border-radius: 1rem;
+  background: $secondary-color-mercury;
+   width: 30.9375rem;
+  // flex-shrink: 0;
+  padding: 1rem;
+}
+
+.search__input::placeholder {
+  color: $primary-color-black;
+}
+
+.footer {
+  padding: .3125rem;
+  background-color: $primary-color-black;
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1.5rem;
+
+    h2 {
+      color: $secondary-color-white;
+      margin: 0;
+    }
+  }
+
+  &__copyright,
+  &__website {
+    color: $secondary-color-white;
+  }
+
+  &__email {
+    text-decoration: none;
+    color: $secondary-color-white;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

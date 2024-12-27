@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cocktail Party 🍹🍹🍹</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <script src="./script/cocktailApi.js" type="module" defer></script>
+    <script src="./script/index.js" type="module" defer></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <h1 class="header__title">🍹 Cocktail Party </h1>
+      <iframe src="https://giphy.com/embed/BPJmthQ3YRwD6QqcVD" width="480" height="269"  frameBorder="0" class="header__giphy" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/HBOMax-hbomax-the-great-gatsby-2013-thegreatgatsbyonhbomax-BPJmthQ3YRwD6QqcVD"></a></p>
+    </header>
+      <div class="search__bar">
+      <form class="search">
+        <input type="text"
+        id="search__id"
+          class="search__input"
+          placeholder="Search for a cocktail by name"
+        />
+      </form>
+      <form class="search__ingredients">
+        <input type="text"
+        id="search__id__ingredients"
+          class="search__input"
+          placeholder="Search for a cocktail by ingredient">
+      </form>
+      <form class="random"><button class="search__button">random</button></form>
+    </div>
+    
+
+    <main>
+      <section class="cocktails">
+      </section>
+    </main>
+    
+    <footer class ="footer">
+      <div class="footer__content">
+        <div class="footer__contact">
+          <a href="mailto:cocktailparty@gmail.com" class="footer__email">cocktailparty@gmail.com</a>
+        </div>
+
+        <div class="footer__legal">
+          <h2 class="footer__logo">Cocktail Party</h2>
+          <p class="footer__website">cocktailparty.com</p>
+          <p class="footer__copyright">Copyright &copy API</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
